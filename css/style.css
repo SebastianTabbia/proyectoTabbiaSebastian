@@ -494,3 +494,11 @@ max-height: 200px;
             max-width: 60%;
         }
 }
+
+/* nuevos estilos sobre grilla base */
+
+.boton{
+
+    background-color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
