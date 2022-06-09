@@ -1,0 +1,496 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* font-size: 62.5% */
+    /*1rem = 10px*/
+}
+
+.grilla {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0fr 0.5fr 0fr 0fr;
+    grid-template-areas:
+        "nav nav nav nav"
+        "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+        "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+        "terceraSeccion terceraSeccion terceraSeccion terceraSeccion"
+        "cuartaSeccion cuartaSeccion cuartaSeccion cuartaSeccion"
+        "footer footer footer footer";
+}
+
+/* ---------NAV------ */
+.nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image:
+        url(https://services.meteored.com/img/article/cientistas-podem-ter-descoberto-a-quinta-forca-fundamental-do-universo-220621-1_1024.jpg);
+    max-height: 100px;
+}
+
+.nav img {
+    width: 150px;
+    padding: 20px;
+}
+
+.nav ul {
+    width: 80%;
+    height: 30%;
+    text-decoration: none;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav li {
+    list-style: none;
+    margin: 15px
+}
+
+.nav li:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+
+.nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: black;
+    font-weight: 900px;
+}
+
+/* ------PRIMERA SECCION------- */
+.primeraSeccion {
+    grid-area: primeraSeccion;
+}
+
+.primeraSeccion div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.primeraSeccion img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* ------SEGUNDA SECCCION-------- */
+
+.segundaSeccion {
+    grid-area: segundaSeccion;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.segundaSeccion div {
+    text-align: center;
+    margin: 20px;
+    width: 80vw;
+}
+
+.segundaSeccion h2 {
+    font-size: 30px;
+    font-style: bold;
+}
+
+.segundaSeccion p {
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.segundaSeccion h3 {
+    font-size: 20px;
+    font-style: bold;
+}
+
+/* --------FOOTER------- */
+.footer {
+    grid-area: footer;
+    background-color: black;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 40px;
+}
+
+.footer i {
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.footer i:hover {
+    color: white;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.footer h3{
+    color: white;
+    margin-top: 20px;
+}
+
+
+/* -------PAGINA REMERAS Y TAZAS------------ */
+
+.terceraSeccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.terceraSeccion section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.terceraSeccion div {
+    background-color: black;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.terceraSeccion img {
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+}
+
+.terceraSeccion span {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+}
+
+.terceraSeccion input {
+    font-style: bold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(139, 138, 138);
+}
+
+.terceraSeccion input:hover {
+    font-size: 18px;
+    font-style: bold;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: rgb(119, 201, 37);
+}
+
+
+/* ----------------ENVIOS Y CONTACTO------------------ */
+
+.primeraSeccion container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 60%;
+    margin-left: 260px;
+    border-radius: 20px;
+}
+
+.primeraSeccion form{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.primeraSeccion input{
+    margin:5px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.primeraSeccion h2{
+    color: white;
+    text-align: center;
+}
+
+.formulario{
+margin: 10px;
+max-width: 97%;
+height: 100px;
+max-height: 200px;
+}
+
+.boton{
+    background-color: gray;
+}
+
+.boton:hover{
+    background-color: darkgreen;
+    color: white;
+    font-size: 18px;
+}
+
+
+.segundaSeccion container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-top: 40px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+
+.parrafo{
+    margin-top: 40px;
+    font-size: 14px;
+    max-width: 60%;
+    text-align: center;
+}
+
+.mapa{
+    margin-top: 40px;
+}
+
+.fondo{
+    background-image:url("../img/sublime.png");
+}
+
+/*RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST*/
+
+
+@media (max-width: 768px) {
+    .grilla {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0fr 0.5fr 0fr 0fr;
+        grid-template-areas:
+            "nav nav nav nav"
+            "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+            "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+            "terceraSeccion terceraSeccion terceraSeccion terceraSeccion"
+            "footer footer footer footer";
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .primeraSeccion {
+        margin-top: 30px;
+    }
+
+
+    .terceraSeccion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 40px;
+    }
+
+    .terceraSeccion section{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .terceraSeccion div {
+        background-color: black;
+        border-radius: 20px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .primeraSeccion container{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        max-width: 60%;
+        margin-left: 153px;
+        border-radius: 20px;
+    }
+
+    .fondo{
+        background-image:none;
+    }
+    
+}
+
+/* DISPOSITIVO CHICO */
+
+@media (max-width:375px) {
+
+    .grilla {
+        display: grid;
+            justify-content: center;
+    }
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .nav img {
+        width: 150px;
+        padding: 20px;
+    }
+    
+    .nav ul {
+        width: 80%;
+        height: 30%;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav li {
+        list-style: none;
+        margin: 5px;
+        font-size: 10px;
+    }
+    
+    .nav li:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+    }
+    
+    .nav a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .nav a:hover {
+        color: black;
+        font-weight: 900px;
+    }
+
+    .primeraSeccion img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .terceraSeccion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 40px;
+    }
+    
+    .terceraSeccion section {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion div {
+        background-color: black;
+        border-radius: 20px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion img {
+        border-start-start-radius: 20px;
+        border-start-end-radius: 20px;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion span {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .terceraSeccion input {
+        font-style: bold;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(139, 138, 138);
+    }
+    
+    .terceraSeccion input:hover {
+        font-size: 16px;
+        font-style: bold;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(119, 201, 37);
+    }
+    
+    .primeraSeccion container{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        max-width: 60%;
+        margin-left: 80px;
+        border-radius: 20px;  
+        }
+
+        .mapa{
+            margin-top: 40px;
+            max-width: 60%;
+        }
+}
