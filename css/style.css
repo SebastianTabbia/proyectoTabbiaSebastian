@@ -221,7 +221,7 @@
 }
 
 .primeraSeccion form{
-    background-color: black;
+    background-image: linear-gradient(to top,black,grey,black);
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -230,7 +230,7 @@
 }
 
 .primeraSeccion input{
-    margin:5px;
+    margin: 20px;
     padding: 10px;
     border-radius: 10px;
     font-size: 14px;
@@ -296,32 +296,72 @@ max-height: 200px;
 
 /* --------LAPTOP 1024 PX */
 
-@media (max-width: 1024px) {
-
-    .grilla {
-        display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-        grid-template-rows: 0fr 0.5fr 0fr 0fr;
-        grid-template-areas:
-            "nav nav nav nav"
-            "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
-            "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
-            "terceraSeccion terceraSeccion terceraSeccion terceraSeccion"
-            "footer footer footer footer";
-    }
-
-    .nav {
-        grid-area: nav;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .nav ul {
-        margin-top: 15px;
-        margin-bottom: 20px;
-}
-
+    @media (max-width: 1024px) {
+        .grilla {
+            display: grid;
+            grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+            grid-template-rows: 0fr 0.5fr 0fr 0fr;
+            grid-template-areas:
+                "nav nav nav nav"
+                "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+                "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+                "terceraSeccion terceraSeccion terceraSeccion terceraSeccion"
+                "footer footer footer footer";
+        }
+    
+        .nav {
+            flex-direction: column;
+        }
+    
+        .nav ul {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    
+        .primeraSeccion {
+            margin-top: 30px;
+        }
+    
+    
+        .terceraSeccion{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-top: 40px;
+        }
+    
+        .terceraSeccion section{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .terceraSeccion div {
+            background-color: black;
+            border-radius: 20px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+    
+        .primeraSeccion container{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            max-width: 60%;
+            margin-left: 153px;
+            border-radius: 20px;
+        }
+    
+        .fondo{
+            background-image:none;
+        }
+        
 }
 
 /* ------TABLET DE 768PX */
@@ -391,6 +431,272 @@ max-height: 200px;
         background-image:none;
     }
     
+}
+
+
+/* -----DISPOSITIVOS INTERMEDIOS 590 PX */
+
+
+@media (max-width:590px) {
+
+    .grilla {
+        display: grid;
+            justify-content: center;
+    }
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .nav img {
+        width: 150px;
+        padding: 20px;
+    }
+    
+    .nav ul {
+        width: 80%;
+        height: 30%;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav li {
+        list-style: none;
+        margin: 5px;
+        font-size: 14px;
+    }
+    
+    .nav li:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+    }
+    
+    .nav a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .nav a:hover {
+        color: black;
+        font-weight: 900px;
+    }
+
+    .primeraSeccion img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .terceraSeccion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 40px;
+    }
+    
+    .terceraSeccion section {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion div {
+        background-color: black;
+        border-radius: 20px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion img {
+        border-start-start-radius: 20px;
+        border-start-end-radius: 20px;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion span {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .terceraSeccion input {
+        font-style: bold;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(139, 138, 138);
+    }
+    
+    .terceraSeccion input:hover {
+        font-size: 16px;
+        font-style: bold;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(119, 201, 37);
+    }
+    
+    .primeraSeccion container{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        max-width: 60%;
+        margin-left: 80px;
+        border-radius: 20px;  
+        }
+
+        .mapa{
+            margin-top: 40px;
+            max-width: 60%;
+        }
+}
+
+/* -----DISPOSITIVOS CHICOS 425PX */
+
+@media (max-width:425px) {
+
+    .grilla {
+        display: grid;
+            justify-content: center;
+    }
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    
+    .nav img {
+        width: 150px;
+        padding: 20px;
+    }
+    
+    .nav ul {
+        width: 80%;
+        height: 30%;
+        text-decoration: none;
+        background-color: black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav li {
+        list-style: none;
+        margin: 5px;
+        font-size: 12px;
+    }
+    
+    .nav li:hover {
+        background-color: rgb(255, 255, 255);
+        border-radius: 4px;
+    }
+    
+    .nav a {
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    
+    .nav a:hover {
+        color: black;
+        font-weight: 900px;
+    }
+
+    .primeraSeccion img{
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .terceraSeccion {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-right: 40px;
+    }
+    
+    .terceraSeccion section {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion div {
+        background-color: black;
+        border-radius: 20px;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion img {
+        border-start-start-radius: 20px;
+        border-start-end-radius: 20px;
+        max-width: 100%;
+    }
+    
+    .terceraSeccion span {
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .terceraSeccion input {
+        font-style: bold;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(139, 138, 138);
+    }
+    
+    .terceraSeccion input:hover {
+        font-size: 16px;
+        font-style: bold;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        background-color: rgb(119, 201, 37);
+    }
+    
+    .primeraSeccion container{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+        max-width: 60%;
+        margin-left: 80px;
+        border-radius: 20px;  
+        }
+
+        .mapa{
+            margin-top: 40px;
+            max-width: 60%;
+        }
 }
 
 /* DISPOSITIVO CHICO */
@@ -526,9 +832,3 @@ max-height: 200px;
 }
 
 /* nuevos estilos sobre grilla base */
-
-.boton{
-
-    background-color: red;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
