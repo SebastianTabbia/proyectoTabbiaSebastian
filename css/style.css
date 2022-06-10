@@ -294,7 +294,37 @@ max-height: 200px;
 
 /*RESPONSIVE DESING - MEDIA QUERY - MOBILE LAST*/
 
+/* --------LAPTOP 1024 PX */
 
+@media (max-width: 1024px) {
+
+    .grilla {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 0fr 0.5fr 0fr 0fr;
+        grid-template-areas:
+            "nav nav nav nav"
+            "primeraSeccion primeraSeccion primeraSeccion primeraSeccion"
+            "segundaSeccion segundaSeccion segundaSeccion segundaSeccion"
+            "terceraSeccion terceraSeccion terceraSeccion terceraSeccion"
+            "footer footer footer footer";
+    }
+
+    .nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav ul {
+        margin-top: 15px;
+        margin-bottom: 20px;
+}
+
+}
+
+/* ------TABLET DE 768PX */
 @media (max-width: 768px) {
     .grilla {
         display: grid;
